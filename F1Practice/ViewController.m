@@ -28,19 +28,15 @@
 - (IBAction)Button:(id)sender {
 	NSLog(@"Hello World!");
 	
-	UIColor *greenColor = [UIColor greenColor];
-	self.view.backgroundColor = greenColor;
-	
-	//self.view.backgroundCOlor [UIColor greenColor];
-	
 }
 - (IBAction)switch:(id)sender {
 	NSLog(@"I just got switched!");
 }
 - (IBAction)slider:(id)sender {
+	float value = self.slider.value;
 	
-	if ( self.slider.value > 0.5) {
-		NSLog(@"The slider value is: %f.", self.slider.value);
+	if ( value > 0.5) {
+		NSLog(@"The slider value is: %f.", value);
 	}
 }
 
