@@ -11,6 +11,6 @@
 @interface ViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UISlider *slider;
 
-
+-(IBAction)closeView:(id)sender;
 
 @end

@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-
 @interface ViewController ()
 
 @end
@@ -18,6 +17,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+	
 }
 
 - (void)didReceiveMemoryWarning
@@ -33,11 +33,21 @@
 	NSLog(@"I just got switched!");
 }
 - (IBAction)slider:(id)sender {
-	float value = self.slider.value;
+	float value = self.slider.value; //CGFloat is needed now, because of really recent changes.
 	
 	if ( value > 0.5) {
 		NSLog(@"The slider value is: %f.", value);
 	}
+}
+-(IBAction)closeView:(id)sender {
+	[self dismissViewControllerAnimated:YES completion:nil];
+	//Closes ViewController. Implement this version as it is the cleanest.
+}
+
+- (IBAction)unwindFromDetailViewController:(UIStoryboardSegue *)segue
+{
+    // UIViewController *detailViewController = [segue sourceViewController];
+    NSLog(@"%@", segue.identifier);
 }
 
 @end

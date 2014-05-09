@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38BF6FC3191C86DC00084A26 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BF6FC2191C86DC00084A26 /* SecondViewController.m */; };
 		38F3787D1919D808004E716B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F3787C1919D808004E716B /* Foundation.framework */; };
 		38F3787F1919D808004E716B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F3787E1919D808004E716B /* CoreGraphics.framework */; };
 		38F378811919D808004E716B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F378801919D808004E716B /* UIKit.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		38BF6FC1191C86DC00084A26 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		38BF6FC2191C86DC00084A26 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		38F378791919D808004E716B /* F1Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = F1Practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38F3787C1919D808004E716B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		38F3787E1919D808004E716B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -79,6 +82,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38309A25191C7B2B00DA9259 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				38F3788E1919D808004E716B /* Main_iPhone.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		38309A26191C7E8700DA9259 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				38F378941919D808004E716B /* ViewController.h */,
+				38F378951919D808004E716B /* ViewController.m */,
+				38BF6FC1191C86DC00084A26 /* SecondViewController.h */,
+				38BF6FC2191C86DC00084A26 /* SecondViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		38F378701919D808004E716B = {
 			isa = PBXGroup;
 			children = (
@@ -114,9 +136,8 @@
 			children = (
 				38F3788B1919D808004E716B /* AppDelegate.h */,
 				38F3788C1919D808004E716B /* AppDelegate.m */,
-				38F3788E1919D808004E716B /* Main_iPhone.storyboard */,
-				38F378941919D808004E716B /* ViewController.h */,
-				38F378951919D808004E716B /* ViewController.m */,
+				38309A25191C7B2B00DA9259 /* Views */,
+				38309A26191C7E8700DA9259 /* Controller */,
 				38F378971919D808004E716B /* Images.xcassets */,
 				38F378831919D808004E716B /* Supporting Files */,
 			);
@@ -249,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38BF6FC3191C86DC00084A26 /* SecondViewController.m in Sources */,
 				38F378961919D808004E716B /* ViewController.m in Sources */,
 				38F3788D1919D808004E716B /* AppDelegate.m in Sources */,
 				38F378891919D808004E716B /* main.m in Sources */,
